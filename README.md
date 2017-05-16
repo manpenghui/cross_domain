@@ -12,10 +12,10 @@ node.js 的跨域解决方案
 });  
 ```
 ### 2.在chrome浏览器中通过以下方式解决
- 
+
 * 49之前的版本 在属性页面中的目标输入框里加上   --disable-web-security  如下图所示
 
-
+![Alt text](/before49.png "before49 image")
 
 点击应用和确定后关闭属性页面，并打开chrome浏览器。如果浏览器出现提示“你使用的是不受支持的命令标记 --disable-web-security”，那么说明配置成功。
 
@@ -27,9 +27,12 @@ chrome的版本升到49之后，跨域设置比以前严格了，在打开命令
 具体做法为：
 
 1)在电脑上新建一个目录，例如：C:\MyChromeDevUserData
+ ![Alt text](/file.png "file image")
 
 2)在属性页面中的目标输入框里加上   --disable-web-security --user-data-dir=C:\MyChromeDevUserData，其中--user-data-dir的值就是刚才新建的目录。
+![Alt text](/after49.png "after49 image ")
 
 3)点击应用和确定后关闭属性页面，并打开chrome浏览器。
 
 再次打开chrome，发现有“--disable-web-security”相关的提示，说明chrome又能正常跨域工作了。
+![Alt text](/chrome-expression.png "expression image ")
