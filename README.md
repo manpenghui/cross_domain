@@ -15,7 +15,7 @@ node.js 的跨域解决方案
 
 * 49之前的版本 在属性页面中的目标输入框里加上   --disable-web-security  如下图所示
 
-![Alt text](/before49.png "before49 image")
+![Alt text](/before49.jpg "before49 image")
 
 点击应用和确定后关闭属性页面，并打开chrome浏览器。如果浏览器出现提示“你使用的是不受支持的命令标记 --disable-web-security”，那么说明配置成功。
 
